@@ -79,15 +79,20 @@ main h2 {
     color: #1177b3;
     text-align: center;
 }
-main figure { margin: 0 0 .2rem 2%; width: 50%; }
-main figure img { 
-    float: left;
-    margin: 2em 2em 4em 4em; 
-    overflow: auto;
+main figure { 
+    margin: 0;
+    width: 100%;
+    height: auto;
+    float: center;
+    }
+}
+.current {
+    margin: 0;
+    float: right;
 }
 
 section {
-   
+    text-align: left;
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px;
@@ -97,10 +102,17 @@ section h3 {
     font-size: 1.5rem;
 }
 
+.forecast {
+    display: none;
+}
+
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 600px; /* fill the page in the small/phone view */
-    margin: 1em;
-    clear: left;
+    width: 100%; /* fill the page in the small/phone view */
+    float: center;
+    margin: 0;
+    .clearfix {
+        overflow: auto;
+    }
 }
 
 footer {
