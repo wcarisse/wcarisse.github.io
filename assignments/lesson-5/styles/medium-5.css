@@ -1,10 +1,63 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+  header, nav, main, footer { 
+    max-width: 64em;
+    height: auto;   
+  }
   
-  nav button { display:none; }  /* hamburger button does not need to be shown */
+  header h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  header img {
+    width: 15%;
+    height: auto;
+    margin: 1em; 
+  }
+  header .subheading { text-align: center;  }
+
+  nav button { display: none; }  /* hamburger button does not need to be shown */
+  nav ul { overflow: hidden; }
+  nav ul li {
+    display: inline;
+    float: left;
+    border-bottom-style: hidden;
+    border-right-style: solid;
+    border-width: medium;
+  }
+  nav ul li a {
+    display: block;
+    text-align: center;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
   
-  section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
+  .franklinpic {
+    width: 100%;
+    height: 375px;
+  }  
+    
+  section.summary {
+    display: contents;
+    text-align: center;
+    margin: 0 -10em 0 5em;
+    padding: 0;
+  }
+  .cloudypic {
+    margin: 0 6em 2em -6em;
+    float: center;
   
+
+  }
+  section.forecast {            /* show the 10-day forecast with the medium view and up */
+      display: block;          
+      background-color: #1177b3;
+      color: #ffffff;
+      text-align: center;
+    }  
+    section h3 { font-size: 1.75em; }
+
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
 }
