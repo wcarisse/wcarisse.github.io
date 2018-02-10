@@ -25,39 +25,51 @@
     border-bottom-style: hidden;
     border-right-style: solid;
     border-width: medium;
+    width: 14%;
   }
-  nav ul li a {
+  nav a {
     display: block;
     text-align: center;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
   }
   
-  .franklinpic {
-    width: 100%;
-    height: 375px;
-  }  
-    
-  section.summary {
-    display: contents;
-    text-align: center;
-    margin: 0 -10em 0 5em;
-    padding: 0;
-  }
-  .cloudypic {
-    margin: 0 6em 2em -6em;
-    float: center;
-  
+.franklinpic {
+    float: left;
+    width: 60%;
+    height: 325px;
+    margin-right: 1rem;
+}
+section picture img { 
+   width: 20%;
+   float: right;
+   margin: 0 1rem 1rem 0;
+}
 
-  }
+section {
+    text-align: left; 
+}
+
+  
   section.forecast {            /* show the 10-day forecast with the medium view and up */
-      display: block;          
+      display: block;
+      width: 100%;
+      margin: 2rem auto;
       background-color: #1177b3;
       color: #ffffff;
       text-align: center;
+      padding-bottom: 2rem;
     }  
-    section h3 { font-size: 1.75em; }
+    table {
+        width: 100%;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-width: medium;
+        border-color: white;      
+    }
+    th, td {
+        font-size: 1.5em;
+        padding: 0 1rem 1rem 0;
+    }
 
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
 }
