@@ -1,13 +1,14 @@
-/a* This main css file contains the default rules and is geared toward the small/phone view */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
-  font-family: sans-serif; 
+  font-family: 'Montserrat', sans-serif;
 }
 
 header, nav, main, footer { 
+    font-family: 'Montserrat', sans-serif;
     display: block;
     position: relative;
     margin: 2rem auto;
@@ -19,11 +20,11 @@ header {
     background-color: #1177b3;
     margin-bottom: -20px;
     padding-bottom: 25px;
+    text-align: left;
 }
 header h1 {
     color: #ffffff;
     font-size: 2em;
-    text-align: center;
 }
 header img {
     display: block;
@@ -34,7 +35,7 @@ header img {
 }
 header .subheading {
     color: #ffffff; 
-    text-align: right;
+    text-align: left;
     font-style: italic;
 }
 
@@ -44,7 +45,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: [auto, hidden];
+    overflow: hidden;
     height: 100%;
 }
 nav ul li {
@@ -80,10 +81,9 @@ main h2 {
     color: #1177b3;
     text-align: center;
 }
-.franklinpic {
+main figure.franklinpic {
     display: block;
-    margin: auto;
-    float: center;
+    margin: 0;
     width: 100%;  
 }
 section picture img { 
@@ -127,7 +127,7 @@ article h3 {
 }
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%; /* fill the page in the small/phone view */
-    float: center;
+    
     margin: 0;
 }
 
