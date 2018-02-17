@@ -16,9 +16,10 @@
     margin: 1em; 
   }
   header .subheading { text-align: center;  }
-
+    /*.josh {display: }*/
   nav button { display: none; }  /* hamburger button does not need to be shown */
   nav ul { overflow: hidden; }
+  nav ul.navigation {display: block !important;}
   nav ul li {
     display: inline;
     float: left;

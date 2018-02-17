@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="clearfix">
     <img src="images/weathervane.jpg" alt="weathervane">
     <h1>The Weather Vane</h1>
     <div class="subheading">Always Ahead of the Rain</div>
@@ -24,23 +24,23 @@
 
   <!-- site navigation use placeholder references -->
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+   <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+   <ul class="navigation" id="mynav"><div class="josh">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
-    </ul>		
+   </div> </ul> 		
   </nav>
     
   <main>
-    <figure class="franklinpic">
+    <figure class="clearfix">
       <img src="images/franklin-default.jpg" alt="franklin" sizes="100vw"
-           srcset="images/franklin-300.jpg 300w,
-                   images/franklin-800.jpg 800w,
-                   images/franklin-1300.jpg 1300w,">
+           srcset="images/franklin-small.jpg 800w,
+                   images/franklin-medium.jpg 1100w,
+                   images/franklin-large.jpg 1800w,">
     </figure>
     <h2>Franklin</h2>
     
@@ -117,11 +117,11 @@
         (541)677-7777<br>
         contact@theweathervane.com<br>  
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Vane | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved &vert; The Weather Vane &vert; <span id="currentdate"><script src="scripts/currentdate.js"></script></span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
-
+  
+ 
 </body>
 </html>
