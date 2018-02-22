@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Gallery | Weather Forecast | The Weather Vane</title>
+    <meta name="author" content="Carissa E Cunningham">
+    <meta name="description" content="Weather images, related to Franklin, Greenville, and Springfield.">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+
+<body>
+    <header class="clearfix">
+        <img src="images/weathervane.jpg" alt="weathervane">
+        <h1>The Weather Vane</h1>
+        <div class="subheading">Always Ahead of the Rain</div>
+    </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="mynav">
+    	   <li><a href="#">Home</a></li>
+    	   <li><a href="franklin-7.html">Franklin</a></li>
+    	   <li><a href="#">Greenville</a></li>
+    	   <li><a href="#">Springfield</a></li>
+    	   <li><a href="#">Storm Center</a></li>
+    	   <li class="active"><a href="gallery-7.html">Gallery</a></li>
+        </ul> 		
+    </nav>
+    
+    <main class="grid">
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <figure>
+                <img src="images/gallery-fog.jpeg">
+                <figcaption>Morbi porta, dolor vitae euismod cursus, metus orci facilisis odio, sit amet viverra nulla metus vitae urna. Proin id turpis enim. Praesent fermentum porttitor lectus, eu tristique lectus sagittis vitae.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery-nightsky.jpg">
+                <figcaption>Praesent tristique sodales augue, vel pulvinar tellus hendrerit a. Duis nec velit id dui tincidunt porta eu et ante. Curabitur dictum sapien dolor, at laoreet arcu consectetur consectetur. Phasellus neque nisl, feugiat sed libero pharetra, vulputate aliquam dolor.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery-snow.jpeg">
+                <figcaption>Morbi eu maximus nulla. Etiam nec felis eget magna cursus ultrices sed a purus. Nam ornare aliquet lorem ultricies malesuada. Etiam ac nisl non velit pellentesque gravida. Cras pretium enim nisi, sed dictum est efficitur eu.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery-biker-rain.jpeg">
+                <figcaption>Quisque leo sapien, consectetur id quam sed, consectetur lacinia purus. Proin in faucibus nisl, sed facilisis massa. Maecenas ut pulvinar orci. Suspendisse in urna in diam euismod dignissim. Sed ultricies urna in pulvinar euismod.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery-aurora-borealis.jpeg">
+                <figcaption>Suspendisse commodo ullamcorper diam ac tincidunt. Quisque condimentum auctor dui non venenatis. Pellentesque mollis enim eu velit auctor, aliquet fermentum risus placerat. Curabitur interdum pulvinar bibendum.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery-road-leaves.jpeg">
+                <figcaption>Donec fermentum, ante a ornare malesuada, tortor nunc dictum urna, congue venenatis quam libero lacinia quam. Nullam volutpat est id elit faucibus commodo. Proin laoreet augue sem, et posuere erat pulvinar non. Mauris condimentum ex nisi. </figcaption>
+            </figure>
+        </section>
+    </main>
+    
+    <footer>
+        <aside>
+            The Weather Vane <br>
+            500 Sunnyside Ln #101<br>
+            Greenville, OR 97504<br>
+            (541)677-7777<br>
+            contact@theweathervane.com<br>  
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved &vert; The Weather Vane &vert; <span id="currentdate"><script src="scripts/currentdate.js"></script></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script> 
+</body>
+</html>
