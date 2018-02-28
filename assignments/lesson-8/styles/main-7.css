@@ -1,0 +1,187 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header, nav, main, footer { 
+    font-family: 'Montserrat', sans-serif;
+        
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: #1177b3;
+    padding: 1em;
+    grid-column-gap: 1em;
+   
+}
+header img {
+    width: 6em;
+    height: auto;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 1;
+}
+header h1 {
+    color: #ffffff;
+    font-size: 2em;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+header .subheading {
+    color: #ffffff; 
+    text-align: left;
+    font-style: italic;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+
+nav {
+    background-color: dimgray; 
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+nav ul li {
+    padding: .5rem;
+    border-bottom-style: solid;
+    border-color: #ffffff;
+    border-width: thick;
+    
+}
+nav ul.navigation {display: none;}
+nav ul li a {
+    font-size: 1em;
+    color: #ffffff;
+    font-family: sans-serif;
+    display: block;
+    text-decoration: none;
+}
+nav ul li.active a {
+    color: deepskyblue;
+}
+nav ul li a:hover {
+    color: deepskyblue;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {display: block !important;}
+	.navigation.responsive { position: relative; }
+	.navigation.responsive li { background-color: dimgray;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
+	.navigation.responsive li a { 
+        padding: .3rem; 
+        text-align: center;	
+     /*   display: block !important; */
+        text-decoration:none; 
+    }
+	.navigation.responsive li a:hover { background-color: #ddd; }
+}
+
+
+
+main {
+    border-style: solid;
+    border-color: #1177b3;
+    border-width: thick;
+    
+}
+main h2 {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: #1177b3;
+    text-align: center;
+}
+main figure img {
+    width: 100%;   
+}
+section picture img { 
+   width: 35%;
+   float: left;
+   margin: 0 -3rem 4rem 3.5rem;
+}
+
+section {
+    text-align: center;
+    color: dimgray; 
+}
+section h3 {
+    font-size: 1.5rem;
+}
+.current {
+    font-size: 1.5rem;
+}
+.highlow  {
+    font-size: 1rem;
+}
+.conditions {
+    font-size: 1rem;
+}
+.forecast {
+    display: none;
+}
+
+
+article {
+    padding: 1.5em;
+    background-color: dimgrey;
+    color: #ffffff;
+}
+article h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.secondparagraph {
+    display: none;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%; /* fill the page in the small/phone view */
+    margin: 0;
+}
+
+footer {
+    bottom: 0;
+    background-color: #1177b3;
+    height: auto;
+    margin-bottom: 20px;
+}
+footer aside {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+footer>p {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*Gallery Page*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img:hover {box-shadow: 10px 10px 10px gray;}
+
+main section.gallery img {
+    width: 100%;
+}

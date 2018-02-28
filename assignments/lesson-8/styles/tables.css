@@ -1,0 +1,35 @@
+
+        main {
+            display: flex;
+            justify-content: center;
+            font-family: Ubuntu, sans-serif;
+        }
+        table, th, td {
+            border: 1.5px solid DarkGrey;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 15px;
+        }
+        th, .special {
+            color: white;
+            background-color: #628ca6;
+        }
+        table tr:nth-child(odd) {
+            background-color: #e7f0ed;
+        }
+        table tr:nth-child(even) {
+            background-color: #e7ffed;
+        }
+        thead tr td {
+            background-color: #7fb9c2;
+            font-weight: 600;
+            font-size: 1.75em;
+        }
+        tfoot tr td {
+            background-color: #7fb9c2;
+            font-size: .75em;
+            padding: 8px;
+        }    
+    
