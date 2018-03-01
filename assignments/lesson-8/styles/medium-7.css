@@ -91,5 +91,13 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-
+    
+    /*Storm Center Page*/
+    input.submitBtn { width: 25%; }
+    legend { margin-left: 3%; }
+    
+    /*Thank you page*/
+    .thankyou {
+    align-items: center;
+    }
 }

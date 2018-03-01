@@ -9,7 +9,7 @@ body {
 
 header, nav, main, footer { 
     font-family: 'Montserrat', sans-serif;
-        
+    width: 100%;
 }
 header {
     display: grid;
@@ -184,4 +184,64 @@ footer>p {
 
 main section.gallery img {
     width: 100%;
+}
+
+
+/*Storm Center Page*/
+
+main h1.stormheader {
+    margin: 1em 3%;
+}
+
+form#storm {
+    margin: 1em 3%;
+}
+fieldset {
+    margin: 1.5em 0;
+    border: #1177b3 solid 4px;
+}
+legend {
+    color: #ffffff;
+    margin-left: 6%;
+    padding: .5em;
+    border: dimgrey solid 1px;
+    background-color: #1177b3;
+ 
+}
+label {
+    display: block;
+    margin: .5em;
+}
+label span {
+    display: block;
+    font-size: .8em;
+    color: dimgrey;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+span#ratingvalue {
+    display: inline;
+    margin: 1em;
+    color: red;
+}
+input.submitBtn {
+    color: black;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1.2em;
+    padding: .6em;
+    background-color: yellowgreen;
+    box-shadow: 4px 4px 10px #666;
+}
+
+/*THank you Page*/
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 3%;
+    padding: .5em;
 }
