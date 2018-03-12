@@ -36,7 +36,7 @@
     
     <main>
         <h1 class="stormheader">Report a Storm</h1>
-        <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormform" id="storm">
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormform" id="storm">
         <fieldset>
             <legend><span>Personal Information:</span></legend>
             <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
@@ -83,7 +83,7 @@
             
             <input type="submit" value="Submit" class="submitBtn">
             <input type="hidden" value="Submited" name="subject">
-            <input name="redirect" type="hidden" value="thanks.html">
+            <input type="hidden" value="thanks.html" name="redirect"  >
         </fieldset>        
         </form>
     </main>
