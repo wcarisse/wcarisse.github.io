@@ -1,0 +1,100 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  header, nav, main, footer { 
+    max-width: 1400px;
+    height: auto;   
+  }
+
+  header {
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 3fr 1fr;
+    grid-row-gap: 0;
+  }
+  header img {
+    width: 7em;
+    height: auto;
+  }
+    
+  nav ul li {
+    font-size: 1.5em;
+    width: 15%;
+  }  
+    
+  .franklinpic {
+    width: 100%;
+    height: 460px;
+    margin-bottom: 25px;
+  } 
+   section {
+    text-align: center; 
+  } 
+    
+  section h3 {
+    float: inherit;
+    }  
+  section picture img { 
+    width: 20%;
+    float: left;
+      margin: -50px -200px 50px 300px;
+  }
+    
+    
+  article h3 {
+        text-align: center;
+    } 
+  .secondparagraph {
+        display: block;
+    }
+  article p.town-article img { 
+      width: 40%; 
+      margin: 0 5rem 0 10rem; 
+    }
+    
+    
+    /*Gallery Page*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+  
+    
+    /*Storm Center Page*/
+    input.submitBtn {width: 15%;}
+    legend { margin-left: 2%;}
+    
+    
+    /*HomePage*/
+    
+    section.cities {
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        border-style: solid;
+        border-color: #1177b3;
+    }
+    
+    
+    section.cities li {
+        display: flex;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
