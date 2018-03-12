@@ -68,19 +68,13 @@
     /*HomePage*/
     
     section.cities {
-        display: inline-flex;
+        display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
-        border-style: solid;
-        border-color: #1177b3;
     }
     
     
-    section.cities li {
-        display: flex;
-    
-    }
     
     
     
