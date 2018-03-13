@@ -1,0 +1,141 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+  header, nav, main, footer { 
+    max-width: 64em;
+    height: auto;   
+  }
+  
+ header {
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 4fr 1fr;
+     grid-row-gap: 0;
+}
+header img {
+    width: 7em;
+    height: auto;
+}
+header h1 {
+    font-size: 2.5em;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 1;
+    grid-column-end: 3;
+}
+header .subheading {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+    
+    
+  
+  nav button { display: none; }  /* hamburger button does not need to be shown */
+  nav ul { overflow: hidden; }
+  nav ul.navigation {display: block !important;}
+  nav ul li {
+    display: inline;
+    float: left;
+    border-bottom-style: hidden;
+    border-right-style: solid;
+    border-width: medium;
+    width: 14%;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
+  
+.franklinpic {
+    float: left;
+    width: 60%;
+    height: 325px;
+    margin-right: 1rem;
+}
+section picture img { 
+   width: 20%;
+   float: right;
+   margin: 0 1rem 1rem 0;
+}
+
+section {
+    text-align: left;
+    padding-left: 1em;
+}
+
+    
+    .currenttemps { 
+        border-style: none;
+        border-bottom: solid;
+        border-bottom-color: #1177b3;
+    }
+  
+  section.forecast {            /* show the 10-day forecast with the medium view and up */
+      display: grid;
+      width: 100%;
+      background-color: #1177b3;
+      color: #ffffff;
+    }  
+    table {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-width: medium;
+        border-color: white;      
+    }
+    th, td {
+        font-size: 1.5em;
+        padding: 0 1rem 1rem 0;
+    }
+
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+    
+    /*Gallery Page*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    /*Storm Center Page*/
+    input.submitBtn { width: 25%; }
+    legend { margin-left: 3%; }
+    
+    /*Thank you page*/
+    .thankyou {
+    align-items: center;
+    }
+    
+    /*HomePage*/
+    
+    section.cities {}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

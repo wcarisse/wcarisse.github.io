@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center | Report a Storm | The Weather Vane</title>
+    <meta name="author" content="Carissa E Cunningham">
+    <meta name="description" content="Enter information to report a storm near you.">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+    
+<body>
+    <header>
+        <img src="images/weathervane.jpg" alt="weathervane">
+        <h1>The Weather Vane</h1>
+        <div class="subheading">Always Ahead of the Rain</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="mynav">
+    	   <li><a href="index.html">Home</a></li>
+    	   <li><a href="franklin.html">Franklin</a></li>
+    	   <li><a href="greenville.html">Greenville</a></li>
+    	   <li><a href="springfield.html">Springfield</a></li>
+    	   <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	   <li><a href="gallery.html">Gallery</a></li>
+        </ul> 		
+    </nav>
+    
+    <main>
+        <h1 class="stormheader">Report a Storm</h1>
+        <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormform" id="storm">
+        <fieldset>
+            <legend><span>Personal Information:</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+            <label><span>Email:</span><input name="email" type="email" placeholder="example@gmail.com"></label>
+            <label><span>Phone:</span><input name="phone" type="tel" placeholder="1235556767" pattern="[0-9]{10,20}" required></label>
+            <label><span>Zip Code:</span><input name="zipcode" type="number" placeholder="85224" required></label>
+        </fieldset>
+        <fieldset>
+            <legend><span>Storm Information:</span></legend>
+            <label><span>Storm Date:</span><input name="sdate" type="date"></label>
+            <label>
+                <span>Storm Type</span>
+                <input type="text" name="stype" list="storms">
+                <datalist id="storms">
+                    <option value="Tornado"></option>
+                    <option value="Hail"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Flash Flood"></option>
+                    <option value="Lightning"></option>
+                    <option value="Freezing Rain"></option>
+                </datalist>
+            </label>
+            <label>
+                <span>Storm Severity (1-10)</span><input name="stormsev" type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+            <label>
+                <span>Storm Region:</span>
+                <select name="region" >
+                    <option value="Select Region" selected disabled>Select Region...</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Springfield">Springfield</option>
+                </select>
+            </label>
+            <label>
+                <span>Are you in danger?</span>
+                <input name="danger" type="radio" value="yes">Yes<br>
+                <input name="danger" type="radio" value="maybe">Maybe<br>
+                <input name="danger" type="radio" value="no">No<br>
+            </label>
+            <label><span>Comments:</span><textarea rows="5" cols="30"></textarea></label>
+            
+            <input type="submit" value="Submit" class="submitBtn">
+            <input type="hidden" value="Submited" name="subject">
+            <input name="redirect" type="hidden" value="thanks.html">
+        </fieldset>        
+        </form>
+    </main>
+    
+     <footer>
+        <aside>
+            The Weather Vane <br>
+            500 Sunnyside Ln #101<br>
+            Greenville, OR 97504<br>
+            (541)677-7777<br>
+            contact@theweathervane.com<br>  
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved &vert; The Weather Vane &vert; <span id="currentdate"><script src="scripts/currentdate.js"></script></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/adjustrating.js"></script>
+</body>
+</html>
