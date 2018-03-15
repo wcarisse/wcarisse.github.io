@@ -46,6 +46,9 @@ header .subheading {
     display: block;
     text-align: center;
   }
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
   
 .franklinpic {
     float: left;
