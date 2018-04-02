@@ -1,0 +1,32 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    header {
+    display: grid;
+    background-image: url(home-photo-medium.jpg);
+    background-size: contain;
+    }
+    
+    nav button { display: none; }  /* hamburger button does not need to be shown */
+    
+    
+  nav ul { overflow: hidden; }
+  nav ul.navigation {display: block !important;}
+  nav ul li {
+    display: inline;
+    float: left;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    background-color: floralwhite;
+    width: 14%;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+}
