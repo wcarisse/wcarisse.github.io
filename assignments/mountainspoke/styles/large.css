@@ -1,3 +1,17 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    header {
+        display: grid;
+        background-image: url(home-photo-large.jpg);
+        background-size: cover;
+        grid-template-rows: auto auto 600px auto;
+    } 
+    
+    
+    
+    
+    
+    
+    
 }
