@@ -27,7 +27,7 @@ header img {
     width: 4em;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: .25em 0 0 .5em;
     grid-area: 1 / 1 / 1 / 1;
 }
 
@@ -37,6 +37,7 @@ header img {
     text-align: center;
     font-family: cursive;
     background: rgba(225, 225, 225, 0.5); 
+    margin-left: 4em;
 }
 
 header button {
@@ -64,10 +65,9 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
-nav ul li.active a {
-    background-color: #ddd;
-    color: black;
-}
+
+nav ul li.active a { text-decoration: underline; }
+
 nav ul li:hover {
     background-color: #ddd;
     color: black;
@@ -97,7 +97,7 @@ article.homehours {
 
 .shoplink {
     text-decoration: none;
-    color: black;
+    color: white;
 } 
 
 .homeshopbikes {
@@ -107,8 +107,6 @@ article.homehours {
 }
 
 .homeshopbikes:hover {box-shadow: 10px 10px 10px gray;}
-
-.hoursofoperation {list-style-type: none;}
 
 .homeimage {
     display: flex;
@@ -133,7 +131,7 @@ main article.hometours {
 #adventure:hover {box-shadow: 10px 10px 10px gray;}
 
 
-main article img {
+#homefalls {
     margin-bottom: 20px;
     box-shadow: 10px 10px 10px gray;
 }
@@ -159,9 +157,14 @@ footer p a {
     color: white;
 }
 
+/*ADVENTURE TOURS*/
 
-
-
+.adventuretours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+}
 
 
 

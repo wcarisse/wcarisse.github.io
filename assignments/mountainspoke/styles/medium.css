@@ -41,6 +41,7 @@
     }
     
     nav ul li:hover { background-color: #ddd; }
+    nav ul li a:hover { color: black; }
     
     .subheading {
         grid-area: 4 / 5 / 4 / 6;
@@ -55,17 +56,10 @@
         justify-content: space-evenly;     
     }
     
-    .shoplink {
-       flex-basis: 30%;
-    }
-    
-    main article img {
-        height: 8em;
-    }
-    
-    .homeimage {
-       flex-basis: 30%;
-    }
+    .homehours { flex-basis: 30%; }
+    .hometours { flex-basis: 30%; }
+    .homeimage { flex-basis: 30%; }
+     main article img { height: 8em; }
     
     
     
