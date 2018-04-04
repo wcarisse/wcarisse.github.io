@@ -28,8 +28,21 @@
     
     .shoplink { font-size: 1.5em; }
     main article img { height: 14em; }
+    .homehours { font-size: 1em; }
+    .hometours { font-size: 1em; }
     
     
+    /*ADVENTURE TOURS PAGE*/
+    
+    .adventuretours {
+        font-size: 1em;
+        flex-basis: 30%;
+    }
+    
+    #tourimage {
+        align-self: center;
+        max-width: 100%;
+    }
     
     
     
