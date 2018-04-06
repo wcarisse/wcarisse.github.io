@@ -34,6 +34,12 @@
     
     /*ADVENTURE TOURS PAGE*/
     
+    #toursh1 { 
+        text-align: left;
+        padding-left: 2em;
+        font-size: 2.5em;
+    }
+    
     .adventuretours {
         font-size: 1em;
         flex-basis: 30%;
@@ -44,6 +50,18 @@
         max-width: 100%;
     }
     
+     /*SALES PAGE*/
+    
+    #salespic {width: 50%;}
+    #bikes { font-size: 1.5em; }
+    
+    #bikes h3 {
+        margin: .5em 10em .5em 10em;
+    }
+    
+    #bikes div {
+        margin: auto 10em auto 10em;
+    }
     
     
     

@@ -62,6 +62,14 @@
      main article img { height: 8em; }
     
     
+    #homefalls {
+        display: flex;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px gray;
+    }
+    
+    #address { display: flex; }
+    
     /*ADVENTURE TOURS PAGE*/
     
     .adventuretours {
@@ -72,7 +80,19 @@
     
     #tourimage {
         align-self: center;
-        max-width: 50%;
+        max-width: 100%;
+    }
+    
+    /*SALES PAGE*/
+    
+    #salespic {width: 50%;}
+    #bikes {font-size: 1em;}
+    
+    #bikes div {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 2em auto 2em;
     }
     
     

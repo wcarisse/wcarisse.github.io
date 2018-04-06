@@ -2,10 +2,6 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-header, nav, main, footer { 
-    font-family: 'Fjalla One', sans-serif;  
-}
-
 nav, main { margin: 2rem auto;}
 
 header {
@@ -21,6 +17,7 @@ header {
 header h1 {
     grid-area: 1 / 2 / 1 / 4;
     font-size: 1em;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 header img {
@@ -33,7 +30,7 @@ header img {
 
 .subheading {
     grid-area: 4 / 2 / 4 / 4;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     font-family: cursive;
     background: rgba(225, 225, 225, 0.5); 
@@ -75,9 +72,9 @@ nav ul.navigation { display: none; }
 
 @media only screen and (max-width: 37.5em) {
     .navigation.responsive {display: grid !important;}
-	.navigation.responsive li { background-color: dimgray;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
+	.navigation.responsive li { background-color: dimgray;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; padding: .5em; font-size: 1.5em;}
 	.navigation.responsive li a { 
-        padding: .3rem; 
+        padding: .5rem; 
         text-align: left;	
         text-decoration:none; 
     }
@@ -91,6 +88,7 @@ article.homehours {
     align-items: center;
     background-color: lightgray; 
     padding: 1em;
+    margin: 1em;
 }
 
 .shoplink {
@@ -102,6 +100,7 @@ article.homehours {
     background-color: darkgoldenrod;
     color: white;
     padding: .25em;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .homeshopbikes:hover {box-shadow: 10px 10px 10px gray;}
@@ -119,21 +118,21 @@ main article.hometours {
     align-items: center;
     background-color: lightgray;
     padding: 1em;
+    margin: 1em;
+    text-align: center;
 }
 
 #adventure {
     background-color: darkgoldenrod;
     color: white;
     padding: .25em;
+    font-family: 'Fjalla One', sans-serif;
 }
 #adventure:hover {box-shadow: 10px 10px 10px gray;}
 
 
-#homefalls {
-    margin-bottom: 20px;
-    box-shadow: 10px 10px 10px gray;
-}
-
+#homefalls { display: none; }
+#address { display: none; }
 
 footer {
     background-color: dimgrey;
@@ -164,11 +163,16 @@ footer p a {
 }
 
 #toursh1 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
     background-color: dimgray;
     color: white;
     text-align: center;
+    padding: .15em;
 }
+
+#tourspan { font-size: .4em; }
 
 .adventuretours {
     display: flex;
@@ -185,11 +189,32 @@ footer p a {
     list-style-type: none;
 }
 
+/*SALES PAGE*/
 
 
+#bikes {
+	display: flex;
+    flex-direction: column;
+	list-style: none;
+    margin: .5em;
+    font-size: 1em;
+}
 
+#bikes h3 {
+    background-color: dimgray;
+    color: white;
+    padding: .5em;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px gray;
+}
 
+#bikes div {
+    background: rgba(225, 225, 225, 0.5);
+    padding: .5em;
+    flex-flow: column nowrap;
+}
 
+#salespic {width: 75%;}
 
 
 
