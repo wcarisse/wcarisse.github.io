@@ -34,7 +34,25 @@
     </header>
     
     <main>
+        <h1>Contact Us</h1>
+        <form action="contact-thanks.html" method="post" enctype="multipart/form-data" name="eventform" id="event">
+        <fieldset>
+            <legend><span>Have a Question?</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+            <label><span>Email:</span><input name="email" type="email" placeholder="example@gmail.com"></label>
+            <label><span>Phone:</span><input name="phone" type="tel" placeholder="1235556767" pattern="[0-9]{10,20}" required></label>
+            <label><span>Message</span><textarea rows="5" cols="30"></textarea></label>
+            
+            <input type="submit" value="Submit" class="submitBtn">
+            <input type="hidden" value="Submited" name="subject">
+            <input name="redirect" type="hidden" value="contact-thanks.html">
+         </fieldset>      
+         </form>
+        
+        
+        
     
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618443556!3d45.67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1522439511941" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     
     </main>
     

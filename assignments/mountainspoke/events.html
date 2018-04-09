@@ -7,7 +7,7 @@
     <meta name="author" content="Carissa E Cunningham">
     <meta name="description" content="Mountain bikes for sale, Trail Tours, Bozeman, Montana">
     <!-- external style references in the proper cascading order -->    
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Yanone+Kaffeesatz" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">  
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -33,24 +33,46 @@
         </nav>
     </header>
     
-    <main>
-        <h2>Cycle the Continental Divide!</h2>
-        <p>Sample our heralded Great Divide Mountain Bike Route, fully supported and load free! We’ll travel from the lively resort town of Whitefish, located near Glacier National Park, to the southern end of the spectacular Swan Range, one of Montana’s less-visited geologic gems. Not far away lies Flathead Lake, the largest natural freshwater lake in the West.</p>
+    <h2 class="eventheader">Cycle the Continental Divide!<span id="eventspan"> Call (408) 888-9898 for more information</span></h2>
+    
+    <main class="eventmain">
+        <section class="eventsection">
+            <h3>Adventure Awaits!</h3>
+            <p>Sample our heralded Great Divide Mountain Bike Route, fully supported and load free! We’ll travel from the lively resort town of Whitefish, located near Glacier National Park, to the southern end of the spectacular Swan Range, one of Montana’s less-visited geologic gems. Not far away lies Flathead Lake, the largest natural freshwater lake in the West.</p>
+        
+            <img src="images/events.jpeg" alt="Beautiful meadow with distant blue mountain" id="eventimage">
 
-        <p>Riding mostly on U.S. Forest Service roads and a bit of singletrack, we’ll experience the high country of one of the world’s great wildland complexes. Along the way, we’ll encounter a variety of flora and fauna — the sharp-eyed might even spot wild huckleberries ripe for the picking or the occasional bear on a distant hillside. We’ll skirt the southern boundaries of the Bob Marshall and Scapegoat wilderness areas and crest the Continental Divide on a loop near Lincoln, our ultimate destination.</p>
+            <p>Riding mostly on U.S. Forest Service roads and a bit of singletrack, we’ll experience the high country of one of the world’s great wildland complexes. Along the way, we’ll encounter a variety of flora and fauna — the sharp-eyed might even spot wild huckleberries ripe for the picking or the occasional bear on a distant hillside. We’ll skirt the southern boundaries of the Bob Marshall and Scapegoat wilderness areas and crest the Continental Divide on a loop near Lincoln, our ultimate destination.</p>
+        </section>
         
-        <ul> Details:
-            <li>Trip Dates: Jul 07, 2018 - Jul 13, 2018</li>
-            <li>Cost: $1,299.00</li>
-            <li>Location: Whitefish, MT</li>
-            <li>Physical Difficulty: Intermediate*</li>
-        </ul>
-        
-        <p>*Must be able to ride loaded for 50-70 miles per day for several consecutive days.</p>
+        <section id="eventdetails">
+            <h4>Event Details:</h4>
+            <table> 
+                <tr>
+                    <td>Trip Dates:</td>
+                    <td>Jul 07, 2018 - Jul 13, 2018</td>
+                </tr> 
+                 <tr>
+                    <td>Cost:</td>
+                    <td>$1,299.00</td>
+                </tr> 
+                 <tr>
+                    <td>Location:</td>
+                    <td>Whitefish, MT</td>
+                </tr> 
+                 <tr>
+                    <td>Difficulty:</td>
+                    <td>Intermediate*</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="eventdiv">*Must be able to ride loaded for 50-70 miles per day for several consecutive days.</td>
+                </tr>
+            </table>
+        </section>
         
         <form action="thanks.html" method="post" enctype="multipart/form-data" name="eventform" id="event">
         <fieldset>
-            <legend><span>Personal Information:</span></legend>
+            <legend><span>Sign Up Today!</span></legend>
             <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
             <label><span>Email:</span><input name="email" type="email" placeholder="example@gmail.com"></label>
             <label><span>Phone:</span><input name="phone" type="tel" placeholder="1235556767" pattern="[0-9]{10,20}" required></label>
@@ -110,21 +132,26 @@
 	                <option value="WV">West Virginia</option>
 	                <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>	
                 </select>
             </label>
             <label><span>Special Accomadations Needed?</span><textarea rows="5" cols="30"></textarea></label>
             
-            <input type="submit" value="Submit" class="submitBtn">
+            <input type="submit" value="Join the Tour" class="submitBtn">
             <input type="hidden" value="Submited" name="subject">
             <input name="redirect" type="hidden" value="thanks.html">
          </fieldset>      
          </form>
         
-         <img src="images/events.jpeg">
         
-        
-        
-    
     </main>
     
     <footer>

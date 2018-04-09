@@ -5,7 +5,7 @@
     header {
         display: grid;
         grid-template-columns: 75px auto auto auto;
-        grid-template-rows: auto auto 250px; auto;
+        grid-template-rows: auto auto 100px auto;
         background-image: url(home-photo-medium.jpg);
         background-size: cover;
     }
@@ -14,14 +14,15 @@
     header h1 {
         padding: 0;
         grid-area: 1 / 2 / 1 / 4;
-        font-size: 1em;
+        font-size: 1.5em;
+        margin: .25em;
     }
 
     header img {
-        width: 5.5em;
+        width: 7em;
         height: auto;
         padding: .5em;
-        margin: 0;
+        margin: .5em;
         grid-area: 1 / 1 / 3 / 1;
     }
     
@@ -45,7 +46,7 @@
     
     .subheading {
         grid-area: 4 / 5 / 4 / 6;
-        font-size: 1.75em;
+        font-size: 2em;
         text-align: center;
         font-family: cursive;
         background: rgba(225, 225, 225, 0.5); 
@@ -72,20 +73,21 @@
     
     /*ADVENTURE TOURS PAGE*/
     
+    
     .adventuretours {
         font-size: .5em;
         flex-basis: 30%;
         padding: 1em;
     }
     
-    #tourimage {
+    .tourimage {
         align-self: center;
         max-width: 100%;
     }
     
     /*SALES PAGE*/
     
-    #salespic {width: 50%;}
+    .salespic {width: 50%;}
     #bikes {font-size: 1em;}
     
     #bikes div {
@@ -94,6 +96,24 @@
         align-items: center;
         margin: auto 2em auto 2em;
     }
+    
+    /*EVENTS PAGE*/
+
+    main.eventmain {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row-reverse;
+    }
+    
+    .eventsection img { width: 50%; }
+    
+    #eventdetails { width: 30%; }
+    form#event { padding: .5em; }
+   
+    
+    
+    
+    
     
     
     

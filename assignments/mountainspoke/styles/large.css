@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 85em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     
     header {
@@ -20,7 +20,8 @@
     }
     
     header nav {
-        font-size: 2em;
+        padding-top: 1em;
+        font-size: 1.75em;
         grid-area: 1 / 3 / 2 / 6;
     }
     
@@ -45,14 +46,20 @@
         flex-basis: 30%;
     }
     
-    #tourimage {
+    .tourimage {
         align-self: center;
         max-width: 100%;
     }
     
      /*SALES PAGE*/
     
-    #salespic {width: 50%;}
+    #salesh1 {
+        font-size: 2.5em;
+        text-align: left;
+        padding-left: 2em;
+    }
+    
+    .salespic {width: 50%;}
     #bikes { font-size: 1.5em; }
     
     #bikes h3 {
@@ -63,13 +70,19 @@
         margin: auto 10em auto 10em;
     }
     
+    /*EVENTS PAGE*/
+
+    h2.eventheader { 
+        font-size: 2.5em;
+        text-align: left;
+        padding-left: 1.25em;
+    }
     
+    .eventsection img { width: 100%; }
     
-    
-    
-    
-    
-    
+    main.eventmain { flex-direction: row; }
+    .eventsection { width: 30%; }
+    #eventdetails { width: 20%; }
     
     
     
