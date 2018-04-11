@@ -235,7 +235,7 @@ footer p a {
     flex-direction: column;
 }
 
- h2.eventheader {
+ .eventheader {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -344,6 +344,38 @@ input.submitBtn {
 }
 
 /*CONTACT US PAGE*/
+
+#contactmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+#contactmain section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: dimgray;
+    padding: .75em;
+}
+
+#contactmain section h3 {
+    background-color: lightgray;
+    text-align: center;
+    padding: .5em;
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+#contactmain section p {
+    background-color: lightgray;
+    text-align: center;
+    padding: .5em;
+    margin: auto;
+}
+
+#contactmain section iframe {margin: 1em; align-self: center;}
 
 .thanks {
     display: flex;

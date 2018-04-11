@@ -110,7 +110,17 @@
     #eventdetails { width: 30%; }
     form#event { padding: .5em; }
    
+    /*CONTACT US PAGE*/
     
+    #contactmain {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;    
+}
+    
+    #contactmain section p {
+        font-size: 1.5em;
+    } 
     
     
     
