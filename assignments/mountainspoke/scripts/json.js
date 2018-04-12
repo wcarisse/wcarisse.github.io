@@ -1,4 +1,4 @@
-var header = document.querySelector('header');
+
 var section = document.querySelector('section');
 
 var requestURL = 'https://wcarisse.github.io/assignments/mountainspoke/data/services.json';
@@ -16,6 +16,8 @@ request.onload = function() {
 function populateTable(jsonObj) {
     var headings = jsonObj['services'];
     
+    
+    
     var col = [];
     for (var i = 0; i < headings.length; i++) {
         for (var key in services[i]){
@@ -23,7 +25,7 @@ function populateTable(jsonObj) {
                 col.push(key);
             }
         }
-    }
+  }
     
     var table = document.createElement('table');
     var tr = table.insertRow(-1);
@@ -32,15 +34,20 @@ function populateTable(jsonObj) {
         var th = document.createElement('th');
         th.innerHTML = col[i];
         tr.appendChild(th);
+     }
+        
+    for (var i = 0; i < col.length; i++) {
+        
+        tr = table.insertRow(-1);
         
         for (var j = 0; j < col.length; j++) {
-        var tableCell = tr.insertCell(-1);
-        tableCell.innerHTML = services[i][col[j]];
+            var tableCell = tr.insertCell(-1);
+            tableCell.innerHTML = services[i][col[j]];  
         }
+     }
         
-    }
-    
-    var divContainer = document.getElementById("showServices");
+
+    var divContainer = document.getElementById('showServices');
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
     
