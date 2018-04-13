@@ -88,10 +88,15 @@
     
     
     
+    /*SERVICES PAGE*/
     
+    #servicesmain {
+        justify-content: center;
+        flex-direction: row;
+    }
     
-    
-    
+    #servicefun {margin-right: 2em;}
+    #showServices {margin-left: 2em; }
     
     
 }

@@ -122,7 +122,16 @@
         font-size: 1.5em;
     } 
     
+   /*SERVICES PAGE*/
     
+    #servicesmain {
+        flex-direction: row-reverse;
+    }
+    
+    #serviceheader {
+        padding: auto;
+        margin: auto;
+    }
     
     
     
