@@ -299,7 +299,6 @@ footer p a {
     padding-left: 2em;
 }
 
-
 form#event { margin: 1em 3%; }
 
 fieldset {
@@ -384,4 +383,26 @@ input.submitBtn {
     margin: 2em;
 }
 
+/*SERVICES PAGE*/
 
+#serviceheader {
+    font-size: 2em;
+    text-align: center;
+    background-color: dimgray;
+    color: white;
+    padding: .15em;
+}
+
+#showServices table { margin: auto; }
+
+#showServices th {
+    font-size: 1.5em;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: .15em;
+}
+
+#showServices td {
+    font-size: 1.25em;
+    padding: .3em;
+}

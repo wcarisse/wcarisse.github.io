@@ -2,44 +2,44 @@
     "title": "Pricing",
     "services": [
         {
-            "name": "Basic Tune-Up",
-            "price": "$59.99"
+            "Name": "Basic Tune-Up",
+            "Price": "$59.99"
         },
         {
-             "name": "Premium Tune-Up",
-             "price": "$79.99"
+             "Name": "Premium Tune-Up",
+             "Price": "$79.99"
         },
         {
-             "name": "Brake System Tune-up",
-             "price": "$29.99"
+             "Name": "Brake System Tune-up",
+             "Price": "$29.99"
         },
         {
-             "name": "Install Brake Pads",
-             "price": "$14.99"
+             "Name": "Install Brake Pads",
+             "Price": "$14.99"
         },
         {
-             "name": "Install Rotor",
-             "price": "$7.99"
+             "Name": "Install Rotor",
+             "Price": "$7.99"
         },
         {
-             "name": "Clean Chain",
-             "price": "$8.99"
+             "Name": "Clean Chain",
+             "Price": "$8.99"
         },
         {
-             "name": "Install Pedals",
-             "price": "$6.99"
+             "Name": "Install Pedals",
+             "Price": "$6.99"
         },
         {
-             "name": "Install Shifter",
-             "price": "$11.99"
+             "Name": "Install Shifter",
+             "Price": "$11.99"
         },
         {
-             "name": "Repair Wheel Inner Tube",
-             "price": "8.99"
+             "Name": "Repair Wheel Inner Tube",
+             "Price": "8.99"
         },
         {
-             "name": "Overhaul Front/Rear Hub",
-             "price": "$14.99"
+             "Name": "Overhaul Front/Rear Hub",
+             "Price": "$14.99"
         }
     ]
 }
