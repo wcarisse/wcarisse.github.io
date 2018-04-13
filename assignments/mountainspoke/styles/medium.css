@@ -133,8 +133,12 @@
         margin: auto;
     }
     
-    
-    
+    /*MY VIDEO PAGE*/
+
+    video {
+        width: 520px;
+        height: 440px;
+    }
     
     
 }

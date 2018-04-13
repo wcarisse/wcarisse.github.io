@@ -99,4 +99,12 @@
     #showServices {margin-left: 2em; }
     
     
+    /*MY VIDEO PAGE*/
+
+    video {
+        width: auto;
+        height: auto;
+    }
+    
+    
 }

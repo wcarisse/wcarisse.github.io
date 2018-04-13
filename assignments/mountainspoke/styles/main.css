@@ -393,6 +393,7 @@ input.submitBtn {
 
 #servicefun img {
     margin: 1em;
+    box-shadow: 10px 10px 10px gray;
 }
 
 #serviceheader {
@@ -416,4 +417,16 @@ input.submitBtn {
 #showServices td {
     font-size: 1.25em;
     padding: .3em;
+}
+
+/*MY VIDEO PAGE*/
+
+#videomain {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 420px;
+    height: 340px;
 }
